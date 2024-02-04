@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniels</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="> -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+
+</head>
+
+
+<body class="bg-black">
+
+  <nav class="navbar navbar-nav bg-white position-fixed top-0 start-0 vh-100 text-center ms-0  p-4">
+    <div class="container-fluid">
+      <div class="ms-auto logo1 text-center "><img src="images/logo.png" alt=""></div>
+      <button class="navbar-toggler bg-transparent " type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="icons1">
+        <a href=""><i class="fa-solid fa-globe " style="color: rgb(0, 0, 0);"></i></a>
+        <a href=""><i class="fa-solid fa-share-nodes " style="color: rgb(0, 0, 0);"></i></a>
+      </div>
+      <div class="offcanvas offcanvas-end text-bg-dark  position-fixed top-0 start-0 vh-100    me-auto" tabindex="-1"
+        id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header  ms-auto">
+          <div class="ms-auto logo text-center"><img src="images/logo.png" alt=""></div>
+          <button type="button" class="btn-close  " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <div class="icons ">
+            <a href=""><i class="fa-solid fa-globe " style="color: black;"></i></a>
+            <a href=""><i class="fa-solid fa-share-nodes " style="color: black;"></i></a>
+          </div>
+
+
+        </div>
+
+
+        <div class="offcanvas-body  me-auto  ">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+            <li class="nav-item ms-auto">
+              <a class="nav-link " aria-current="page">Now playing</a>
+            </li>
+            <li class="nav-item me-auto">
+              <a class="nav-link">Popular</a>
+            </li>
+            <li class="nav-item me-auto">
+              <a class="nav-link">Top rated</a>
+            </li>
+            <li class="nav-item me-auto">
+              <a class="nav-link">Trending</a>
+            </li>
+            <li class="nav-item me-auto">
+              <a class="nav-link">Upcoming</a>
+            </li>
+            <li class="nav-item me-auto">
+              <a class="nav-link" href="#contact">Contact us</a>
+            </li>
+
+          </ul>
+
+          <div class="footer" style="color: rgb(124, 124, 124);">
+            <div class="icons2">
+              <a href=""><i class="fa-brands fa-facebook" style="color: #ffffff;margin: 10px;"></i></a>
+              <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;margin:10px"></i></a>
+              <a href=""><i class="fa-solid fa-globe " style="color: #ffffff;margin:10px"></i></a>
+            </div>
+            <div class="footer-text">
+              <p>copyright@2024 All Rights Reserved.</p>
+              <p>created by <span style="color: crimson;"> Haneen Badr</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+
+    <div class="col-md-12">
+      <div class="search bg-black text-white ">
+        <input type="search" id="searchinput" onkeyup="searchMovie()" placeholder="Search"
+          class="form-control w-50 mx-auto bg-black  m-auto  rounded-pill text-white shadow-none border-white px-3 mm mt-5 pt-3">
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <div class="container">
+    <div class="row contant">
+
+
+    </div>
+
+  </div>
+
+  <section id="contact">
+
+
+    <div class="container">
+
+      <div class="row">
+        <h2 class="m-5 text-white fw-light">Contact US</h2>
+        <div class="info bg-warning fs-5 text-center m-auto text-center col-md-12  ">
+          <input type="text" class="m-3  text-white " id="name" placeholder="Enter Your Name">
+          <input type="text" class="m-3 text-white  " id="email" placeholder="Enter Your Email">
+          <input type="text" class="m-3 text-white   " id="phone" placeholder="Enter Your Phone">
+          <input type="text" class="m-3 text-white  " id="age" placeholder="Enter Your Age">
+          <input type="text" class="m-3 text-white " id="Password" placeholder="Enter Your Password">
+          <input type="text" class="m-3 text-white  " id=repassword placeholder="ReEnter Password">
+
+        </div>
+
+
+      </div>
+      <button type="submit" class="subbtn">Submit</button>
+    </div>
+
+
+
+  </section>
+
+
+  <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
